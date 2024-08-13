@@ -8,12 +8,18 @@ function Mybutton(){
   );
 }
 
-
+function Header(){
+  return(
+    <h1 className="h1">This Title</h1>
+  )
+}
+ 
 function App() {
   return (
     <div className="App">
       <h1>hello world!</h1>
       <Mybutton />
+      <Header />
     </div>
   );
 }
