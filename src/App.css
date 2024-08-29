@@ -1,5 +1,7 @@
-.App {
-  text-align: center;
+*{
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
 }
 
 .App-logo {
@@ -37,6 +39,60 @@
 }
 .btn:hover{
   background-color: #d67702;
+}
+.h1{
+  text-align: left;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+
+/* // Todo list css */
+
+.container {
+  width: 1000px;
+  background: cadetblue;
+  padding: 30px;
+  margin: 130px auto 0;
+}
+.container .inputfield {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container .inputfield h1{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.container .inputfield input[type="text"] {
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container .inputfield .todo-btn {
+  width: fit-content;
+  padding: 7px 20px;
+  margin: 0 auto;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+.task-list{
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  margin-bottom: 20px;
+}
+.task-list:last-child{
+margin-bottom: 0px;
+}
+.task-list p{
+  word-break: break-all;
 }
 
 @keyframes App-logo-spin {
