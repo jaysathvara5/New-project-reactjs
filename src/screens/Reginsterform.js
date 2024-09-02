@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 // function handleRigester(event){
 //     event.preventDefault();
@@ -10,21 +10,40 @@ import React, { useState } from "react";
 function Registerform() {
 
     const [input, inputData] = useState();
+    const [password, setPassword] = useState();
+    const [age, setAge] = useState(1);
 
-    const getData = (e) =>{
-        console.log(e.target.value);
-        inputData(e.target.value);
+    function increseAge(event) {
+        event.preventDefault();
+        setAge(age +1);
     }
+    useEffect(() => {
+        console.log("age: ", age);
 
-    const handleRigester = () =>{
+    }, []);
+    // const getData = (e) =>{
+    //     inputData(e.target.value);
+    // }
+
+    // const getPassword = (e) =>{
+    //     setPassword(e.target.value);
+    // }
+
+    const handleRigester = () => {
         console.log(input);
     }
+    console.log(input);
+    console.log(password);
+
+    
 
     return(
         <form>
+            <h1>{age}</h1>
+            <button onClick={increseAge}>Increse</button>
             <div>
-                <input type="text" placeholder="Enter Name" onChange={getData} />
-                <input type="password" placeholder="Enter Password" />
+                <input type="text" placeholder="Enter Name" value={input} onChange={(e) => inputData(e.target.value)} />
+                <input type="password" placeholder="Enter Password" value={password} onChange={(e) => setPassword(e.target.value)}/>
                 <button onClick={handleRigester}>Login</button>
             </div>
         </form>

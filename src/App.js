@@ -20,9 +20,9 @@ import Todos from './screens/Todos';
  
 function App() {
   return (
-  // <Registerform />
+  <Registerform />
   // <Userdata />
-  <Todos />
+  // <Todos />
   );
 }
 
