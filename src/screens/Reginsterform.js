@@ -13,9 +13,18 @@ function Registerform() {
     const [password, setPassword] = useState();
     const [age, setAge] = useState(1);
 
+
+
+
+
     function increseAge(event) {
         event.preventDefault();
-        setAge(age +1);
+        setAge(age + 1);
+    }
+
+    function descrise(event){
+        event.preventDefault();
+        setAge(age - 1);
     }
     useEffect(() => {
         console.log("age: ", age);
@@ -39,6 +48,7 @@ function Registerform() {
 
     return(
         <form>
+            <button onClick={descrise}>Descrice</button>
             <h1>{age}</h1>
             <button onClick={increseAge}>Increse</button>
             <div>

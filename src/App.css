@@ -30,7 +30,7 @@
   color: #61dafb;
 }
 
-.btn{
+/* .btn{
   padding: 8px 20px;
   border: none;
   cursor: pointer;
@@ -39,7 +39,7 @@
 }
 .btn:hover{
   background-color: #d67702;
-}
+} */
 .h1{
   text-align: left;
   font-family: 'Times New Roman', Times, serif;
@@ -93,6 +93,23 @@ margin-bottom: 0px;
 }
 .task-list p{
   word-break: break-all;
+}
+
+
+
+
+
+
+
+.game-board{
+
+}
+.board-row{
+  display: flex;
+}
+.square {
+  height: 25px;
+  width: 25px;
 }
 
 @keyframes App-logo-spin {

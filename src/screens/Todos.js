@@ -26,6 +26,27 @@ function Todos() {
         setData(filterData)
     }
     console.log(data);
+
+    function onHandleClick(){
+            alert("YOu Are Gret Man")
+    }
+    function Mybutton(){
+      }
+
+      const products = [
+        { title: 'Cabbage', age: '21', id: 1 },
+        { title: 'Garlic',id: 2 },
+        { title: 'Apple',  age: '29',id: 3 },
+      ];
+
+      const listItems = products.map(product =>
+        <li key={product.id}>
+          {/* {product.title} */}
+          <br></br>
+          {product.age}
+        </li>
+      );
+
     return(
         <div className="container">
             <div className="inputfield">
@@ -33,16 +54,21 @@ function Todos() {
                 <input type="text" placeholder="Enter your task" value={initial} onChange={getInput} />
                 <button className="todo-btn" onClick={getData}>Add Task</button>
             </div>
-            {data.map((curVal, index) => {
-                return(
-                    <>
-                    <div className="task-list">
+            <ul>
+                {data.map((curVal, index) => {
+                    return(
+                        <>
+                        <li className="task-list">
                         <p>{curVal}</p>
                         <span id="deletetodo" onClick={() => dataDelete(index)}>Delete</span>
-                    </div>
-                    </>
-                )
-            })}
+                        </li>
+                        </>
+                    )
+                })}
+            </ul>
+            <button onClick={onHandleClick} >Login</button>
+            <ul>{listItems}</ul>
+           
         </div>
     );
 }
