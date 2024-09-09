@@ -2,17 +2,7 @@ import './App.css';
 import {Userdata} from './screens/Userdata'
 import { useEffect, useState } from 'react';
 
-// function Mybutton(){
-//   return(
-//     <button className='btn'>CLick Here</button>
-//   );
-// }
 
-// function Header(){
-//   return(
-//     <h1 className="h1">This Title</h1>
-//   )
-// }
 
 
  
