@@ -1,7 +1,7 @@
 import './App.css';
 import Crudopration from './screens/Crudopration';
 
-//hello
+//hellod
 function App() {
 return(
   <>
