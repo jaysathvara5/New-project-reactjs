@@ -8,7 +8,7 @@ function Crudopration() {
 
     useEffect(() => {
       setData(Userdata)
-    },[]) 
+    },[])
   
     const handleEdit = ((id) => {
       setisUpdate(true);
