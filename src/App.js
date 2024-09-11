@@ -1,4 +1,5 @@
 import './App.css';
+import Loginform from './components/Loginform';
 import Selectbox from './components/Selectbox';
 import Crudopration from './screens/Crudopration';
 
@@ -9,8 +10,7 @@ import Crudopration from './screens/Crudopration';
 function App() {
 return(
   <>
-    <Crudopration />
-    <Selectbox />
+    <Loginform />
   </>
 );  
    
