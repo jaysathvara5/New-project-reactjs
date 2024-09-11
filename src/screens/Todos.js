@@ -52,7 +52,7 @@ function Todos() {
             <div className="inputfield">
                 <Title h1="To Do List" />
                 <input type="text" placeholder="Enter your task" value={initial} onChange={getInput} />
-                <button className="todo-btn" onClick={getData}>Add Task</button>
+                <button className="todo-btn" onClick={getData}>Add Task Button</button>
             </div>
             <ul>
                 {data.map((curVal, index) => {
@@ -60,7 +60,7 @@ function Todos() {
                         <>
                         <li className="task-list">
                         <p>{curVal}</p>
-                        <span id="deletetodo" onClick={() => dataDelete(index)}>Delete</span>
+                        <span id="deletetodo" onClick={() => dataDelete(index)}>Delete Button</span>
                         </li>
                         </>
                     )
